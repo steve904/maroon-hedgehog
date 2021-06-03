@@ -1,0 +1,427 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+dataDir: ''
+models:
+  remote_image_urls:
+    type: data
+    label: Remote Image Urls
+    file: content/images/remote_image_urls.json
+    isList: true
+    items:
+      type: string
+  theme:
+    type: data
+    label: Theme
+    file: src/theme.yaml
+    fields:
+      - type: object
+        name: space
+        label: Space
+        fields:
+          - type: string
+            name: default
+            label: Default
+          - type: string
+            name: xxs
+            label: Xxs
+          - type: string
+            name: xs
+            label: Xs
+          - type: string
+            name: s
+            label: S
+          - type: string
+            name: m
+            label: M
+          - type: string
+            name: l
+            label: L
+          - type: string
+            name: xl
+            label: Xl
+          - type: object
+            name: inset
+            label: Inset
+            fields:
+              - type: string
+                name: default
+                label: Default
+              - type: string
+                name: xs
+                label: Xs
+              - type: string
+                name: s
+                label: S
+              - type: string
+                name: m
+                label: M
+              - type: string
+                name: l
+                label: L
+          - type: object
+            name: stack
+            label: Stack
+            fields:
+              - type: string
+                name: default
+                label: Default
+              - type: string
+                name: xxs
+                label: Xxs
+              - type: string
+                name: xs
+                label: Xs
+              - type: string
+                name: s
+                label: S
+              - type: string
+                name: m
+                label: M
+              - type: string
+                name: l
+                label: L
+          - type: object
+            name: inline
+            label: Inline
+            fields:
+              - type: string
+                name: default
+                label: Default
+              - type: string
+                name: xxs
+                label: Xxs
+              - type: string
+                name: xs
+                label: Xs
+              - type: string
+                name: s
+                label: S
+              - type: string
+                name: m
+                label: M
+              - type: string
+                name: l
+                label: L
+      - type: object
+        name: size
+        label: Size
+        fields:
+          - type: object
+            name: radius
+            label: Radius
+            fields:
+              - type: string
+                name: default
+                label: Default
+              - type: string
+                name: small
+                label: Small
+      - type: object
+        name: color
+        label: Color
+        fields:
+          - type: object
+            name: menu
+            label: Menu
+            fields:
+              - type: string
+                name: border
+                label: Border
+          - type: object
+            name: neutral
+            label: Neutral
+            fields:
+              - type: string
+                name: white
+                label: White
+              - type: object
+                name: gray
+                label: Gray
+                fields:
+                  - type: string
+                    name: a
+                    label: A
+                  - type: string
+                    name: b
+                    label: B
+                  - type: string
+                    name: c
+                    label: C
+                  - type: string
+                    name: d
+                    label: D
+                  - type: string
+                    name: e
+                    label: E
+                  - type: string
+                    name: f
+                    label: F
+                  - type: string
+                    name: g
+                    label: G
+                  - type: string
+                    name: h
+                    label: H
+                  - type: string
+                    name: i
+                    label: I
+                  - type: string
+                    name: j
+                    label: J
+                  - type: string
+                    name: k
+                    label: K
+              - type: string
+                name: black
+                label: Black
+          - type: object
+            name: brand
+            label: Brand
+            fields:
+              - type: string
+                name: primary
+                label: Primary
+              - type: string
+                name: primaryLight
+                label: Primary Light
+              - type: string
+                name: primaryDark
+                label: Primary Dark
+              - type: string
+                name: hover
+                label: Hover
+              - type: string
+                name: primaryActive
+                label: Primary Active
+              - type: string
+                name: light
+                label: Light
+              - type: string
+                name: lightActive
+                label: Light Active
+              - type: string
+                name: dark
+                label: Dark
+              - type: string
+                name: darkActive
+                label: Dark Active
+          - type: object
+            name: special
+            label: Special
+            fields:
+              - type: string
+                name: attention
+                label: Attention
+      - type: object
+        name: font
+        label: Font
+        fields:
+          - type: object
+            name: family
+            label: Family
+            fields:
+              - type: string
+                name: initial
+                label: Initial
+              - type: string
+                name: target
+                label: Target
+          - type: object
+            name: weight
+            label: Weight
+            fields:
+              - type: number
+                name: standard
+                label: Standard
+                subtype: int
+              - type: number
+                name: bold
+                label: Bold
+                subtype: int
+          - type: object
+            name: size
+            label: Size
+            fields:
+              - type: string
+                name: xxs
+                label: Xxs
+              - type: string
+                name: xs
+                label: Xs
+              - type: string
+                name: s
+                label: S
+              - type: string
+                name: m
+                label: M
+              - type: string
+                name: l
+                label: L
+              - type: string
+                name: xl
+                label: Xl
+              - type: string
+                name: xxl
+                label: Xxl
+              - type: string
+                name: xxxl
+                label: Xxxl
+          - type: object
+            name: lineHeight
+            label: Line Height
+            fields:
+              - type: number
+                name: xs
+                label: Xs
+                subtype: float
+              - type: number
+                name: s
+                label: S
+                subtype: float
+              - type: number
+                name: m
+                label: M
+                subtype: float
+              - type: number
+                name: l
+                label: L
+                subtype: float
+              - type: number
+                name: xl
+                label: Xl
+                subtype: float
+              - type: number
+                name: xxl
+                label: Xxl
+                subtype: float
+              - type: number
+                name: reset
+                label: Reset
+                subtype: int
+      - type: object
+        name: time
+        label: Time
+        fields:
+          - type: object
+            name: duration
+            label: Duration
+            fields:
+              - type: string
+                name: default
+                label: Default
+              - type: string
+                name: long
+                label: Long
+      - type: object
+        name: background
+        label: Background
+        fields:
+          - type: object
+            name: color
+            label: Color
+            fields:
+              - type: string
+                name: primary
+                label: Primary
+              - type: string
+                name: alt
+                label: Alt
+              - type: string
+                name: brand
+                label: Brand
+      - type: object
+        name: text
+        label: Text
+        fields:
+          - type: string
+            name: family
+            label: Family
+          - type: object
+            name: color
+            label: Color
+            fields:
+              - type: string
+                name: primary
+                label: Primary
+              - type: string
+                name: primaryInverse
+                label: Primary Inverse
+              - type: string
+                name: brand
+                label: Brand
+              - type: string
+                name: attention
+                label: Attention
+          - type: object
+            name: lineHeight
+            label: Line Height
+            fields:
+              - type: number
+                name: default
+                label: Default
+                subtype: float
+          - type: object
+            name: maxWidth
+            label: Max Width
+            fields:
+              - type: string
+                name: tablet
+                label: Tablet
+              - type: string
+                name: desktop
+                label: Desktop
+      - type: object
+        name: heading
+        label: Heading
+        fields:
+          - type: string
+            name: family
+            label: Family
+          - type: object
+            name: size
+            label: Size
+            fields:
+              - type: string
+                name: h1
+                label: H 1
+              - type: string
+                name: h2
+                label: H 2
+              - type: string
+                name: h3
+                label: H 3
+          - type: object
+            name: lineHeight
+            label: Line Height
+            fields:
+              - type: number
+                name: h1
+                label: H 1
+                subtype: float
+              - type: number
+                name: h2
+                label: H 2
+                subtype: float
+              - type: number
+                name: h3
+                label: H 3
+                subtype: float
+          - type: number
+            name: weight
+            label: Weight
+            subtype: int
+      - type: object
+        name: line
+        label: Line
+        fields:
+          - type: string
+            name: color
+            label: Color
+      - type: object
+        name: icon
+        label: Icon
+        fields:
+          - type: string
+            name: color
+            label: Color
